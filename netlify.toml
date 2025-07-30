@@ -7,6 +7,9 @@
   NODE_VERSION = "18"
   VITE_SUPABASE_URL = ""
   VITE_SUPABASE_ANON_KEY = ""
+  VITE_APP_TITLE = "Fast Track Cleaning"
+  VITE_APP_DESCRIPTION = "Professional, reliable, and affordable cleaning with a 7-day re-clean guarantee."
+  VITE_ENV = "production"
 
 [dev]
   command = "npm run dev"
@@ -18,12 +21,6 @@
   from = "/*"
   to = "/index.html"
   status = 200
-
-[context.production.environment]
-  VITE_ENV = "production"
-
-[context.deploy-preview.environment]
-  VITE_ENV = "preview"
 
 [[headers]]
   for = "/*"
@@ -54,18 +51,16 @@
   path = "/api/*"
   function = "api"
 
-[build.processing]
-  [build.processing.css]
-    bundle = true
-    minify = true
-  [build.processing.js]
-    bundle = true
-    minify = true
-  [build.processing.html]
-    pretty_urls = true
-  [build.processing.images]
-    compress = true
+[build.processing.css]
+  bundle = true
+  minify = true
 
-[build.environment]
-  VITE_APP_TITLE = "Fast Track Cleaning"
-  VITE_APP_DESCRIPTION = "Professional, reliable, and affordable cleaning with a 7-day re-clean guarantee."
+[build.processing.js]
+  bundle = true
+  minify = true
+
+[build.processing.html]
+  pretty_urls = true
+
+[build.processing.images]
+  compress = true
