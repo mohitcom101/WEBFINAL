@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #1E3A8A;
+  --color-secondary: #60A5FA;
+  --color-neutral-100: #F8FAFC;
+  --color-neutral-200: #E5E7EB;
+  --color-neutral-300: #D1D5DB;
+  --color-neutral-400: #9CA3AF;
+  --color-success: #10B981;
+  --color-error: #EF4444;
+}
+
+body {
+  @apply font-poppins bg-neutral-100 text-neutral-400;
+}
+
+.container {
+  @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+}
+
+.btn-primary {
+  @apply bg-primary text-white font-medium py-3 px-6 rounded-lg hover:bg-secondary transition-all duration-300;
+}
+
+.btn-secondary {
+  @apply bg-secondary text-white font-medium py-3 px-6 rounded-lg hover:bg-primary transition-all duration-300;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300;
+}
+
+.section-heading {
+  @apply text-3xl md:text-4xl font-bold text-primary mb-6;
+}
+
+.section-subheading {
+  @apply text-lg md:text-xl text-neutral-400 mb-8;
+}
