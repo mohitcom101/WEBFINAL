@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Fast Track Cleaning - Professional, reliable, and affordable cleaning with a 7-day re-clean guarantee." />
+    <meta name="keywords" content="cleaning, end of lease cleaning, professional cleaning, Melbourne cleaning services" />
+    <meta name="author" content="Fast Track Cleaning" />
+    <title>Fast Track Cleaning - Get Your Bond Back</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script type="module" crossorigin src="/assets/index-a64ceb18.js"></script>
+    <link rel="stylesheet" href="/assets/index-45a04c09.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      (function() {
+        const popup = document.createElement("div");
+        popup.innerHTML = "Welcome <strong>Fast Track Cleaning</strong>";
+        Object.assign(popup.style, {
+          position: "fixed",
+          bottom: "20px",
+          left: "20px",
+          backgroundColor: "rgba(0, 0, 0, 0.7)",
+          color: "#fff",
+          padding: "8px 12px",
+          borderRadius: "8px",
+          fontSize: "14px",
+          zIndex: "1000",
+          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+          opacity: "0",
+          transform: "translateY(10px)",
+          transition: "opacity 0.5s ease, transform 0.5s ease"
+        });
+
+        document.body.appendChild(popup);
+
+        requestAnimationFrame(() => {
+          popup.style.opacity = "1";
+          popup.style.transform = "translateY(0)";
+        });
+
+        setTimeout(() => {
+          popup.style.opacity = "0";
+          popup.style.transform = "translateY(10px)";
+          setTimeout(() => popup.remove(), 500);
+        }, 5000);
+      })();
+    </script>
+    
+  </body>
+</html>
